@@ -6,4 +6,8 @@
     npm i
 ```
 
+## Release
+
+```TypeScript
+    melon release --name wechat.js -d -nohtml
 ```
