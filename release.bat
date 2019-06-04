@@ -1,0 +1,1 @@
+melon release --name wechat.js -d -mini -nohtml

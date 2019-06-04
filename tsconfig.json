@@ -35,5 +35,6 @@
     ".d.ts",
     "Interface"
   ],
-  "templete":"./template.html"
+  "templete":"./template.html",
+  "clientRemote":"../engine/"
 }
