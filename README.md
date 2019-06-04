@@ -11,3 +11,9 @@
 ```TypeScript
     melon release --name wechat.js -d -nohtml
 ```
+
+## publish
+
+```TypeScript
+    melon publish
+```
