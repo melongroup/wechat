@@ -6,11 +6,11 @@
     "module": "amd",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
     // "outFile": "../bin-debug/rf3d.js",                       /* Concatenate and emit output to single file. */
     "sourceMap":true,
-    "declaration": true,
+    "declaration": false,
     
     // "watch": false,
     // "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
-    "outDir": "../bin-debug/",
+    "outDir": "./bin-debug/",
     // "sourceMap":true,
     // "watch": true,
 
