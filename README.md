@@ -4,6 +4,7 @@
 
 ```TypeScript
     npm i
+    tsc
 ```
 
 ## Release
