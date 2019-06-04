@@ -34,5 +34,6 @@
     // "src/com/youbt/rfreference.ts",
     ".d.ts",
     "Interface"
-  ]
+  ],
+  "templete":"./template.html"
 }
