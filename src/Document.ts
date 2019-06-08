@@ -1,7 +1,3 @@
-declare class OffscreenCanvas extends HTMLCanvasElement{
-    constructor(width:number,height:number);
-}
-
 module wx{
 
     /**

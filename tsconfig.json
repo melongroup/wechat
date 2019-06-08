@@ -36,5 +36,5 @@
     "Interface"
   ],
   "templete":"./template.html",
-  "clientRemote":"../engine/"
+  "clientRemote":"../engine"
 }
