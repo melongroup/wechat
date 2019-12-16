@@ -12,10 +12,10 @@ module wx{
     export var no_stageHeight:number;
 
 
-    export function createCanvas(){
-        if(typeof OffscreenCanvas == "function"){
-            return new OffscreenCanvas(1,1);
-        }
+    export function createCanvas():HTMLCanvasElement{
+        // if(typeof OffscreenCanvas == "function"){
+        //     return new OffscreenCanvas(1,1) as any;
+        // }
         return document.createElement("canvas");
     }
 
@@ -50,6 +50,7 @@ module wx{
         benchmarkLevel:number       //性能等级，-2 或 0：该设备无法运行小游戏，-1：性能未知，>=1 设备性能值，该值越高，设备性能越好(目前设备最高不到50)
         battery:number;             //电量，范围 1 - 100
         wifiSignal:number;          //wifi 信号强度，范围 0 - 4
+        statusBarHeight:number          //状态栏的高度，单位px
     }
 
 
@@ -101,6 +102,8 @@ module wx{
             no_ismobile = false;
         }
 
+        info.statusBarHeight = 0;
+
 
         no_systemInfo = info;
 
@@ -120,6 +123,8 @@ module wx{
         window.addEventListener("focusin",windowFocusHandler);
         window.addEventListener("focusout",windowFocusHandler);
 
+
+
         return info;
     }
 
@@ -133,6 +138,20 @@ module wx{
                 console.log("关闭键盘");
                 hideKeyboard();
             }
+        }
+    }
+
+
+    function updateOrientation(e:Event){
+        var orientation = window.orientation;
+        switch(orientation){
+            case 90:
+            case -90:
+                orientation = 'landscape'; //这里是横屏
+            break;
+            default:
+                orientation = 'portrait'; //这里是竖屏
+            break;
         }
     }
 

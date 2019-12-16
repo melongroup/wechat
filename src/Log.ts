@@ -44,8 +44,11 @@ module wx {
 
         if (value) {
             let container2d = document.getElementById("container2d");
-            container2d.appendChild(textarea);
-            log();
+            if(container2d){
+                container2d.appendChild(textarea);
+                log();
+            }
+            
         } else {
             textarea.remove();
         }
